@@ -1,7 +1,7 @@
 {
 
   "credentials": {
-    "bot-token": ""
+    "bot-token": "NTk4MTYzMDU0OTUzMzY1NTE1.XSSpHw.vDZMIZzeQp0bSHIvyyhK_A0IhIc"
   },
 
   "directories": {
@@ -11,8 +11,8 @@
     "presets": "presets.json"
   },
 
-  "active-channel": "",
-  "chat-channel": "",
+  "active-channel": "#kartoj-kontraŭ-esperantujo",
+  "chat-channel": "kartoj-kontraŭ-esperantujo",
 
   "roles": {
     "player": "CAH (Players)",

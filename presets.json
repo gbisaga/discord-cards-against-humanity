@@ -1,6 +1,8 @@
 {
 
-  "default": {"prompts": ["us-*", "expansion-*"], "responses": ["us-*", "expansion-*"]},
+  "default": {"prompts": ["kartoj-kontraux-esperantujo"], "responses": ["kartoj-kontraux-esperantujo"]},
+
+  "original-default": {"prompts": ["us-*", "expansion-*"], "responses": ["us-*", "expansion-*"]},
 
   "plain-as-day": {"prompts": ["us-*"], "responses": ["us-*"]},
 
@@ -20,6 +22,8 @@
 
   "cards-against-astronomy": {"prompts": ["cards-against-astronomy"], "responses": ["cards-against-astronomy"]},
 
-  "colours": {"prompts": ["expansion-*-box"], "responses": ["expansion-*-box"]}
+  "colours": {"prompts": ["expansion-*-box"], "responses": ["expansion-*-box"]},
+
+  "kartoj": {"prompts": ["kartoj-kontraux-esperantujo"], "responses": ["kartoj-kontraux-esperantujo"]}
 
 }

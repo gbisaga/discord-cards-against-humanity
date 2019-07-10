@@ -158,6 +158,7 @@ async function iterateCommands (msg, command) {
       break;
 
     case "startGame":
+      console.log(`startGame`);
       if (_local.lobby.status !== 'waiting') {
         msg.channel.send("You can't start the game now!");
         return null;
@@ -171,10 +172,12 @@ async function iterateCommands (msg, command) {
       break;
 
     case "resetGame":
+      console.log(`resetGame`);
       await reset();
       break;
 
     case "listPrompts":
+      console.log(`listPrompts`);
       var send = fs.readdirSync(__dirname + config["directories"]["prompts"]).filter(x => x.endsWith('.txt'));
 
       for (var i = 0; i < send.length; i++) {
@@ -186,7 +189,8 @@ async function iterateCommands (msg, command) {
       break;
 
     case "listResponses":
-      var send = fs.readdirSync(__dirname + config["directories"]["responses"]).filter(x => x.endsWith('.txt'));
+        console.log(`listResponses`);
+        var send = fs.readdirSync(__dirname + config["directories"]["responses"]).filter(x => x.endsWith('.txt'));
 
       for (var i = 0; i < send.length; i++) {
         send[i] = (i+1) + ". " + send[i].replace(".txt", "").toUpperCase();
@@ -456,7 +460,7 @@ async function sendIntro () {
 };
 
 async function purgeMessages () {
-
+  console.log(`channels: ${JSON.stringify(client.channels)}`);
   var channel = client.channels.find(x => x.id === config["active-channel"]);
 
   while ((await channel.fetchMessages({ limit: 1 })).array().length >= 1) {
